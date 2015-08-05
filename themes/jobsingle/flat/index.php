@@ -151,7 +151,7 @@ if ( ! defined('ABSPATH')) exit;  // if direct access
 	$html .= '<div class="section">';		
 	$html .= '<div class="title">'.__('Salary Info','job_bm').'</div>';
 
-	$html .= '<div class="side-meta"><i class="fa fa-paper-plane-o"></i>'.__('Salary Type: ','job_bm').ucfirst($job_bm_salary_type).'</div>';
+	$html .= '<div class="side-meta"><i class="fa fa-bullhorn"></i>'.__('Salary Type: ','job_bm').ucfirst($job_bm_salary_type).'</div>';
 	
 	
 
@@ -162,13 +162,13 @@ if ( ! defined('ABSPATH')) exit;  // if direct access
 	
 	if($job_bm_salary_type=='fixed'){
 		
-		$html .= '<div class="side-meta"><i class="fa fa-paper-plane-o"></i>'.__('Salary: ','job_bm').$job_bm_salary_currency.ucfirst($job_bm_salary_fixed).'</div>';
+		$html .= '<div class="side-meta"><i class="fa fa-usd"></i>'.__('Salary: ','job_bm').$job_bm_salary_currency.ucfirst($job_bm_salary_fixed).'</div>';
 		
 		}
 	elseif($job_bm_salary_type=='min-max'){
 		
 
-		$html .= '<div class="side-meta"><i class="fa fa-paper-plane-o"></i>'.__('Salary: ','job_bm').$job_bm_salary_currency.$job_bm_salary_min.'-'.$job_bm_salary_currency.$job_bm_salary_max.'</div>';
+		$html .= '<div class="side-meta"><i class="fa fa-usd"></i>'.__('Salary: ','job_bm').$job_bm_salary_currency.$job_bm_salary_min.'-'.$job_bm_salary_currency.$job_bm_salary_max.'</div>';
 		
 		}		
 	
