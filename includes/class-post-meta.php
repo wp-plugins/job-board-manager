@@ -218,6 +218,40 @@ class class_job_bm_post_meta{
 			
 						);
 
+			$options['Application'] = array(
+								'job_bm_how_to_apply'=>array(
+									'css_class'=>'how_to_apply',					
+									'title'=>'How to Apply ?',
+									'option_details'=>'How to Apply',						
+									'input_type'=>'textarea', // text, radio, checkbox, select, 
+									'input_values'=> '', // could be array
+									),
+									
+								'job_bm_contact_email'=>array(
+									'css_class'=>'contact_email',					
+									'title'=>'Contact Email ?',
+									'option_details'=>'Contact Email',						
+									'input_type'=>'text', // text, radio, checkbox, select, 
+									'input_values'=> '', // could be array
+									),
+									
+								'job_bm_apply_method'=>array(
+									'css_class'=>'apply_method',					
+									'title'=>'Apply Method ?',
+									'option_details'=>'Apply Method',						
+									'input_type'=>'checkbox', // text, radio, checkbox, select, 
+									'input_values'=>array(), // could be array
+									'input_args'=> array('direct_email'=>'Direct Email','linkedin'=>'Linkedin','saved_cv'=>'Saved CV'),
+									),																	
+									
+			);
+
+
+
+
+
+
+
 			
 			$options = apply_filters( 'job_bm_filters_meta_options', $options );
 

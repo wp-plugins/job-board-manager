@@ -151,3 +151,10 @@ color: rgb(255, 255, 255);
   padding: 8px 0;
 }
 
+.job-single .apply-job {
+  background: none repeat scroll 0 0 rgb(87, 178, 255);
+  color: rgb(255, 255, 255);
+  margin: 0 10px;
+  padding: 4px 10px;
+  text-decoration: none;
+}

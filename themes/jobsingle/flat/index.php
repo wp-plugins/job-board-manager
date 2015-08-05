@@ -140,7 +140,7 @@ if ( ! defined('ABSPATH')) exit;  // if direct access
 	$html .= '<div class="side-meta"><i class="fa fa-users"></i>'.__('No of Vacancies: ','job_bm').$job_bm_total_vacancies.'</div>';	
 	$html .= '<div class="side-meta"><i class="fa fa-exclamation-triangle"></i>'.__('Expiry Date: ','job_bm').$job_bm_expire_date.'</div>';		
 	$html .= '<div class="side-meta"><i class="fa fa-taxi"></i>'.__('Job Type: ','job_bm').$job_type[$job_bm_job_type].'</div>';
-	$html .= '<div class="side-meta"><i class="fa fa-taxi"></i>'.__('Job Level: ','job_bm').$job_level[$job_bm_job_level].'</div>';	
+	$html .= '<div class="side-meta"><i class="fa fa-signal"></i>'.__('Job Level: ','job_bm').$job_level[$job_bm_job_level].'</div>';	
 	
 	$html .= '<div class="side-meta"><i class="fa fa-bolt"></i>'.__('Years of Experience: ','job_bm').$job_bm_years_experience.'</div>';			
 	
@@ -151,7 +151,7 @@ if ( ! defined('ABSPATH')) exit;  // if direct access
 	$html .= '<div class="section">';		
 	$html .= '<div class="title">'.__('Salary Info','job_bm').'</div>';
 
-	$html .= '<div class="side-meta"><i class="fa fa-bullhorn"></i>'.__('Salary Type: ','job_bm').ucfirst($job_bm_salary_type).'</div>';
+	$html .= '<div class="side-meta"><i class="fa fa-trophy"></i>'.__('Salary Type: ','job_bm').ucfirst($job_bm_salary_type).'</div>';
 	
 	
 
@@ -173,6 +173,45 @@ if ( ! defined('ABSPATH')) exit;  // if direct access
 		}		
 	
 	$html .= '</div>'; // .section	
+	
+	
+	
+	
+	$html .= '<div class="section">';		
+	$html .= '<div class="title">'.__('Apply on this job','job_bm').'</div>';
+	
+	if(!empty($job_bm_how_to_apply)){
+		$html .= '<div class="side-meta"><i class="fa fa-trophy"></i>'.__('How to Apply ?<br> ','job_bm').$job_bm_how_to_apply.'</div>';
+		
+		}
+
+	
+	if(!empty($job_bm_apply_method)){
+		
+		foreach($job_bm_apply_method as $key=>$method){
+			
+			if($key == 'direct_email'){
+				
+				$html .= '<div class="side-meta"><i class="fa fa-envelope-o"></i>'.__('Apply via email :','job_bm').'<a class="apply-job" href="mailto:'.$job_bm_contact_email.'">Send Email</a></div>';
+				}
+				
+			elseif($key == 'saved_cv'){
+				
+				$html .= '<div class="side-meta"><i class="fa fa-floppy-o"></i>'.__('Apply via Saved CV :','job_bm').'<a class="apply-job" href="#" job-id="'.$job_id.'">Submit Now</a></div>';
+				}				
+				
+			}
+		
+		}
+
+
+
+		
+	
+	$html .= '</div>'; // .section		
+	
+	
+	
 	
 	
 	
