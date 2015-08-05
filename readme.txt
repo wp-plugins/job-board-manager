@@ -34,6 +34,7 @@ Job Board Manager allows you to create your ready jobs site for WordPress, easy 
 Use this short-code `[job_list]` to display latest job with pagination
 
 <strong>Job Single page</strong>
+
 If you wan to display job on single page like default post, you need to copy your theme single.php and rename to single-job.php
 
 you need to replace content section by following short-code
@@ -41,6 +42,7 @@ you need to replace content section by following short-code
 `<?php echo do_shortcode('[job_single job_id="'.get_the_ID().'"]'); ?>`
 
 <strong>Filters job type</strong>
+
 you can add your job type by filter hook as following example bellow.
 
 `
@@ -56,6 +58,7 @@ add_filter('job_bm_filters_job_type','job_bm_filters_job_type_extra');
 `
 
 <strong>Filters salary type</strong>
+
 you can add your salary type by filter hook as following example bellow.
 
 `
