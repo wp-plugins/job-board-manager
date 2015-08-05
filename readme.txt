@@ -73,7 +73,8 @@ function job_bm_filters_salary_type_extra($salary_type){
 add_filter('job_bm_filters_salary_type','job_bm_filters_salary_type_extra');
 `
 
-<strong>Extened meta fields</strong>
+<strong>Extend meta fields</strong>
+
 If you need some extra input fields under job post type you can use filter hook as following, currently support input fileds are text, textarea, radio, select, checkbox, multi-text,
 
 Please see the file <strong>includes/class-post-meta.php</strong> for example option input by array. 
