@@ -1,7 +1,7 @@
 === Job Board Manager ===
 	Contributors: paratheme
 	Donate link: http://paratheme.com
-	Tags:  Job Board Manager, Job Board, Job, Job Poster
+	Tags:  Job Board Manager, Job Board, Job, Job Poster, job manager, job, job list, job listing, Job Listings, job lists, job management, job manager,
 	Requires at least: 4.1
 	Tested up to: 4.2.2
 	Stable tag: 1.0.0
