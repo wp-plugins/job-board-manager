@@ -85,6 +85,17 @@ add_filter('job_bm_filters_job_type','job_bm_filters_job_type_extra');
 
 
 
+// ############### Filter for job_bm_filters_apply_method ###################
+
+function job_bm_filters_apply_method_extra($apply_method){
+	
+	$apply_method_new = array('method_1'=>'Method 2','method_1'=>'Method 2');
+	$apply_method = array_merge($apply_method,$apply_method_new);
+	
+	return $apply_method;
+		
+	}
+add_filter('job_bm_filters_apply_method','job_bm_filters_apply_method_extra');
 
 
 
@@ -144,15 +155,68 @@ function settings_page2(){
 // #############################
 
 
+
+
+// ############### Filters for apply_method_ ###################
+
+
+
+function job_bm_filters_apply_method_extra($apply_method){
+	
+	$apply_method_new = array('method_1'=>'Method 1','method_2'=>'Method 2');
+	$apply_method = array_merge($apply_method,$apply_method_new);
+	
+	return $apply_method;
+		
+	}
+add_filter('job_bm_filters_apply_method','job_bm_filters_apply_method_extra');
+
+
+function job_bm_filters_apply_method_html_extra($apply_method_html){
+
+	$apply_method_html_new['method_1'] = '<div class="side-meta"><i class="fa fa-floppy-o"></i>'.__('Method 1 :','job_bm').'<a class="apply-job" href="#" job-id="'.$job_id.'">Submit 1</a></div>';	
+
+	$apply_method_html = array_merge($apply_method_html,$apply_method_html_new);
+	
+	return $apply_method_html;
+		
+	}
+
+
+add_filter('job_bm_filters_apply_method_html','job_bm_filters_apply_method_html_extra');
+
+
+// #############################
+
+
+
+
 */
 
 
 
 
+function job_bm_filters_apply_method_extra($apply_method){
+	
+	$apply_method_new = array('method_1'=>'Method 1','method_2'=>'Method 2');
+	$apply_method = array_merge($apply_method,$apply_method_new);
+	
+	return $apply_method;
+		
+	}
+add_filter('job_bm_filters_apply_method','job_bm_filters_apply_method_extra');
 
 
 
+function job_bm_filters_apply_method_html_extra($apply_method_html){
+
+	$apply_method_html_new['method_1'] = '<div class="side-meta"><i class="fa fa-floppy-o"></i>'.__('Method 1 :','job_bm').'<a class="apply-job" href="#" job-id="'.$job_id.'">Submit 1</a></div>';	
+
+	$apply_method_html = array_merge($apply_method_html,$apply_method_html_new);
+	
+	return $apply_method_html;
+		
+	}
 
 
-
-
+add_filter('job_bm_filters_apply_method_html','job_bm_filters_apply_method_html_extra');

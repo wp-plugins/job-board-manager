@@ -241,7 +241,7 @@ class class_job_bm_post_meta{
 									'option_details'=>'Apply Method',						
 									'input_type'=>'checkbox', // text, radio, checkbox, select, 
 									'input_values'=>array(), // could be array
-									'input_args'=> array('direct_email'=>'Direct Email','linkedin'=>'Linkedin','saved_cv'=>'Saved CV'),
+									'input_args'=> apply_filters('job_bm_filters_apply_method',array('direct_email'=>'Direct Email','saved_cv'=>'Saved CV')),
 									),																	
 									
 			);

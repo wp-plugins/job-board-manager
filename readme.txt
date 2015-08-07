@@ -1,5 +1,5 @@
 === Job Board Manager ===
-	Contributors: paratheme, pickplugins
+	Contributors: pickplugins
 	Donate link: http://paratheme.com
 	Tags:  Job Board Manager, Job Board, Job, Job Poster, job manager, job, job list, job listing, Job Listings, job lists, job management, job manager,
 	Requires at least: 4.1
@@ -13,10 +13,14 @@
 == Description ==
 
 
-Job Board Manager allows you to create your ready jobs site for WordPress, easy to extend job input meta fields and add your own options.
+Creating job for WordPress made easy by “Job Board Manager” plugin. super lightweight plugin allows you to create job manager site employer can submit job and employee can apply for job.
 
-### Job Board Manager by http://paratheme.com
-* [Live Demo!&raquo;](http://paratheme.com/demo/job-board-manager/)
+Based on short-code made easy to use anywhere displaying job-list, single job page & etc.
+
+Easy to customizable made this plugin supper developer friendly , you can add your own values for some options via filter hook. You can create unlimited themes for job archive page & job single page by filter hook.
+
+### Job Board Manager by http://pickplugins.com
+* [Live Demo!&raquo;](http://pickplugins.com/demo/job-board-manager/)
 
 <strong>Plugin Features</strong>
 

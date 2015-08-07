@@ -185,21 +185,25 @@ if ( ! defined('ABSPATH')) exit;  // if direct access
 		
 		}
 
+
+
+	$apply_method_html['direct_email'] = '<div class="side-meta"><i class="fa fa-envelope-o"></i>'.__('Apply via email :','job_bm').'<a class="apply-job" href="mailto:'.$job_bm_contact_email.'">Send Email</a></div>';
+
+	$apply_method_html['saved_cv'] = '<div class="side-meta"><i class="fa fa-floppy-o"></i>'.__('Apply via Saved CV :','job_bm').'<a class="apply-job" href="#" job-id="'.$job_id.'">Submit Now</a></div>';
+
+
+	
+	$apply_method_html = apply_filters('job_bm_filters_apply_method_html',$apply_method_html);
+
+
+
 	
 	if(!empty($job_bm_apply_method)){
 		
 		foreach($job_bm_apply_method as $key=>$method){
 			
-			if($key == 'direct_email'){
-				
-				$html .= '<div class="side-meta"><i class="fa fa-envelope-o"></i>'.__('Apply via email :','job_bm').'<a class="apply-job" href="mailto:'.$job_bm_contact_email.'">Send Email</a></div>';
-				}
-				
-			elseif($key == 'saved_cv'){
-				
-				$html .= '<div class="side-meta"><i class="fa fa-floppy-o"></i>'.__('Apply via Saved CV :','job_bm').'<a class="apply-job" href="#" job-id="'.$job_id.'">Submit Now</a></div>';
-				}				
-				
+				$html .= $apply_method_html[$key];
+
 			}
 		
 		}
