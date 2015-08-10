@@ -7,6 +7,7 @@
 
 if ( ! defined('ABSPATH')) exit;  // if direct access 
 	
+	
 
 
 /*### Extend job meta options sample ###*/
@@ -191,7 +192,13 @@ add_filter('job_bm_filters_apply_method_html','job_bm_filters_apply_method_html_
 
 
 
-*/
+
+
+
+
+
+
+
 
 
 
@@ -220,3 +227,18 @@ function job_bm_filters_apply_method_html_extra($apply_method_html){
 
 
 add_filter('job_bm_filters_apply_method_html','job_bm_filters_apply_method_html_extra');
+
+
+
+
+
+
+
+
+
+
+
+*/
+
+
+

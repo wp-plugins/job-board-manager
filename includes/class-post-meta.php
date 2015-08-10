@@ -23,6 +23,27 @@ class class_job_bm_post_meta{
 
 
 			$options['Company Info'] = array(
+			
+			
+								'job_bm_company_name'=>array(
+									'css_class'=>'company_name',					
+									'title'=>'Company Name',
+									'option_details'=>'Company Name, ex: PickPlugins',						
+									'input_type'=>'text', // text, radio, checkbox, select, 
+									'input_values'=>'', // could be array
+									),
+										
+								'job_bm_display_company_name'=>array(
+									'css_class'=>'display_company_name',					
+									'title'=>'Display Company Name ?',
+									'option_details'=>'Display Company Name',						
+									'input_type'=>'radio', // text, radio, checkbox, select, 
+									'input_values'=> 'yes', // could be array
+									'input_args'=> array('yes'=>'Yes','no'=>'No'),
+									),
+			
+			
+			
 								'job_bm_location'=>array(
 									'css_class'=>'location',					
 									'title'=>'Location',
@@ -44,29 +65,10 @@ class class_job_bm_post_meta{
 									'title'=>'Display Company Address ?',
 									'option_details'=>'Display Company Address',						
 									'input_type'=>'radio', // text, radio, checkbox, select, 
-									'input_values'=> 'no', // could be array
+									'input_values'=> 'yes', // could be array
 									'input_args'=> array('yes'=>'Yes','no'=>'No'),
 									),
-									
-								'job_bm_company_name'=>array(
-									'css_class'=>'company_name',					
-									'title'=>'Company Name',
-									'option_details'=>'Company Name, ex: PickPlugins',						
-									'input_type'=>'text', // text, radio, checkbox, select, 
-									'input_values'=>'', // could be array
-									),
-										
-								'job_bm_display_company_name'=>array(
-									'css_class'=>'display_company_name',					
-									'title'=>'Display Company Name ?',
-									'option_details'=>'Display Company Name',						
-									'input_type'=>'radio', // text, radio, checkbox, select, 
-									'input_values'=> 'no', // could be array
-									'input_args'=> array('yes'=>'Yes','no'=>'No'),
-									),
-	
-	
-	
+
 														
 								'job_bm_company_website'=>array(
 									'css_class'=>'company_website',					
@@ -92,7 +94,8 @@ class class_job_bm_post_meta{
 									'input_values'=>'', // could be array
 									
 									),
-																						
+										
+														
 
 						);
 
@@ -307,7 +310,7 @@ class class_job_bm_post_meta{
 				$html_box.= '<p class="option-info">'.$option_info['option_details'].'</p>';
 				
 				if($option_info['input_type'] == 'text'){
-				$html_box.= '<input type="text" placeholder="" name="'.$option_key.'" value="'.$option_value.'" /> ';					
+				$html_box.= '<input id="'.$option_key.'" type="text" placeholder="" name="'.$option_key.'" value="'.$option_value.'" /> ';					
 
 					}
 				elseif($option_info['input_type'] == 'textarea'){
@@ -461,11 +464,12 @@ class class_job_bm_post_meta{
 			$html.= '</ul>';
 			$html.= '<ul class="box">';
 			$html.= $html_box;
-			$html.= '</ul>';		
+			$html.= '</ul>';
+					
+			$html.= apply_filters( 'job_bm_job_meta_scripts','');	
 			
-			
-			
-			$html.= '</div>';			
+			$html.= '</div>';	
+					
 			return $html;
 		}
 	

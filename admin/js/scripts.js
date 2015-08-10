@@ -3,6 +3,7 @@ jQuery(document).ready(function($)
 
 
 
+
 		$(document).on('change', '.job-bm-meta .job_bm_salary_type', function()
 			{
 				var salary_type = $(this).val();

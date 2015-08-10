@@ -3,7 +3,7 @@
 Plugin Name: Job Board Manager
 Plugin URI: http://paratheme.com
 Description: Awesome Resume Builder.
-Version: 1.0.0
+Version: 1.0.1
 Author: paratheme
 Author URI: http://paratheme.com
 License: GPLv2 or later
@@ -26,7 +26,7 @@ class JobBoardManager{
 	define('job_bm_conatct_url', 'http://paratheme.com/contact/' );
 	define('job_bm_qa_url', 'http://paratheme.com/qa/' );
 	define('job_bm_plugin_name', 'Job Board Manager' );
-	define('job_bm_plugin_version', '1.0.0' );
+	define('job_bm_plugin_version', '1.0.1' );
 	define('job_bm_customer_type', 'free' );	 // pro & free	
 	define('job_bm_share_url', 'https://wordpress.org/plugins/job-board-manager/' );
 	define('job_bm_tutorial_video_url', '//www.youtube.com/embed/YXwUFSU23iU?rel=0' );
@@ -68,6 +68,7 @@ class JobBoardManager{
 		wp_enqueue_style('job_bm_style', job_bm_plugin_url.'css/style.css');
 		
 		wp_enqueue_style('font-awesome', job_bm_plugin_url.'css/font-awesome.css');
+
 		
 		//ParaAdmin
 		wp_enqueue_style('ParaAdmin', job_bm_plugin_url.'ParaAdmin/css/ParaAdmin.css');
@@ -85,6 +86,12 @@ class JobBoardManager{
 		wp_localize_script( 'job_bm_admin_js', 'job_bm_ajax', array( 'job_bm_ajaxurl' => admin_url( 'admin-ajax.php')));
 		wp_enqueue_style('job_bm_admin_style', job_bm_plugin_url.'admin/css/style.css');
 
+		wp_enqueue_script('chosen.jquery', plugins_url( '/admin/js/chosen.jquery.js' , __FILE__ ) , array('jquery'));
+		wp_enqueue_script('ajax-chosen', plugins_url( '/admin/js/ajax-chosen.js' , __FILE__ ) , array('jquery'));		
+		
+		wp_enqueue_style('chosen.min', job_bm_plugin_url.'admin/css/chosen.min.css');	
+		
+		
 		//ParaAdmin
 		wp_enqueue_style('ParaAdmin', job_bm_plugin_url.'ParaAdmin/css/ParaAdmin.css');		
 		wp_enqueue_script('ParaAdmin', plugins_url( 'ParaAdmin/js/ParaAdmin.js' , __FILE__ ) , array( 'jquery' ));

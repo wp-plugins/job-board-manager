@@ -24,6 +24,9 @@ class class_job_bm_settings  {
 		
 		add_submenu_page( 'edit.php?post_type=job', __( 'Settings', 'job_bm' ), __( 'Settings', 'job_bm' ), 'manage_options', 'job_bm-settings', array( $this, 'settings_page' ) );
 		
+		add_submenu_page( 'edit.php?post_type=job', __( 'Addons', 'job_bm' ), __( 'Addons', 'job_bm' ), 'manage_options', 'job_bm_addons', array( $this, 'addons_page' ) );		
+		
+		
 		do_action( 'job_bm_action_admin_menus' );
 		
 	}
@@ -34,7 +37,10 @@ class class_job_bm_settings  {
 		}
 	
 
-
+	public function addons_page(){
+		
+		include( 'menu/addons.php' );
+		}
 	
 	
 	

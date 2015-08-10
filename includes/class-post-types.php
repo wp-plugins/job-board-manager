@@ -21,7 +21,7 @@ class class_job_bm_post_types{
 		return;
 
 		$singular  = __( 'Job', 'job_bm' );
-		$plural    = __( 'Job', 'job_bm' );
+		$plural    = __( 'Jobs', 'job_bm' );
 	 
 	 
 		register_post_type( "job",
@@ -31,7 +31,7 @@ class class_job_bm_post_types{
 					'singular_name' 		=> $singular,
 					'menu_name'             => __( $singular, 'job_bm' ),
 					'all_items'             => sprintf( __( 'All %s', 'job_bm' ), $plural ),
-					'add_new' 				=> __( 'Add New', 'job_bm' ),
+					'add_new' 				=> __( 'Add '.$singular, 'job_bm' ),
 					'add_new_item' 			=> sprintf( __( 'Add %s', 'job_bm' ), $singular ),
 					'edit' 					=> __( 'Edit', 'job_bm' ),
 					'edit_item' 			=> sprintf( __( 'Edit %s', 'job_bm' ), $singular ),
