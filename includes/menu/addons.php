@@ -25,9 +25,13 @@ class class_job_bm_addons_page  {
 							
 			'company-profile'=>array(	'title'=>'Company Profile',
 										'version'=>'1.0.0',
+										'price'=>'free',
 										'content'=>'Addon for creating company profile.',										
 										'item_link'=>'http://www.pickplugins.com/item/job-board-manager-company-profile/',
 										'thumb'=>'http://localhost/projects/wordpress/pro/wp-content/uploads/2015/08/dropbox.png',
+										
+										
+										
 			),
 			
 
@@ -63,7 +67,7 @@ class class_job_bm_addons_page  {
 			$html.= '<div class="title"><a href="'.$values['item_link'].'">'.$values['title'].'</a></div>';
 			$html.= '<div class="content">'.$values['content'].'</div>';						
 			$html.= '<div class="meta version"><b>Version:</b> '.$values['version'].'</div>';			
-							
+			$html.= '<div class="meta price"><b>Price:</b> '.$values['price'].'</div>';							
 			
 			$html.= '</div>';
 			
