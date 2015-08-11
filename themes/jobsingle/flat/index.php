@@ -219,7 +219,7 @@ if ( ! defined('ABSPATH')) exit;  // if direct access
 
 
 
-	$apply_method_html['direct_email'] = '<div class="side-meta"><i class="fa fa-envelope-o"></i>'.__('Apply via email :','job_bm').'<a class="apply-job" href="mailto:'.$job_bm_contact_email.'">Send Email</a></div>';
+	$apply_method_html['direct_email'] = '<div class="side-meta"><i class="fa fa-envelope-o"></i>'.__('Apply via email :','job_bm').'<a class="apply-job" href="mailto:'.$job_bm_contact_email.'?subject='.$job_post_data->post_title.'">Send Email</a></div>';
 
 	$apply_method_html['saved_cv'] = '<div class="side-meta"><i class="fa fa-floppy-o"></i>'.__('Apply via Saved CV :','job_bm').'<a class="apply-job" href="#" job-id="'.$job_id.'">Submit Now</a></div>';
 
