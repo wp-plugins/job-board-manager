@@ -3,8 +3,8 @@
 	Donate link: http://paratheme.com
 	Tags:  Job Board Manager, Job Board, Job, Job Poster, job manager, job, job list, job listing, Job Listings, job lists, job management, job manager,
 	Requires at least: 4.1
-	Tested up to: 4.2.2
-	Stable tag: 1.0.1
+	Tested up to: 4.2.4
+	Stable tag: 1.0.2
 	License: GPLv2 or later
 	License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -125,6 +125,8 @@ add_filter('job_bm_filters_meta_options','job_bm_filters_meta_options_extra');
 == Changelog ==
 
 
+	= 1.0.2 =
+    * 10/08/2015 - add - company page link to job & job list.
 
 	= 1.0.1 =
     * 10/08/2015 - add -Menu page for addons list.

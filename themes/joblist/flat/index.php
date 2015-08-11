@@ -128,7 +128,35 @@ if ( ! defined('ABSPATH')) exit;  // if direct access
 				}
 
 			
+			}	
+			
+			
+		elseif($meta_key== 'job_bm_company_name'){
+			
+			$company_data = get_page_by_title( $meta_key_values[$meta_key], 'OBJECT', 'company' );
+			
+			if(!empty($company_data)){
+				
+				$company_link = get_post_permalink($company_data->ID);
+					if(empty($company_link)){
+					
+						$company_link = '#';
+						
+					}
+				}
+			else{
+				
+					$company_link = '#';
+				}
+			
+			if(!empty($meta_key_values[$meta_key])){
+				$html .= '<div title="'.$grid_data['title'].'" class="job-meta '.$grid_data['class'].'"><i class="fa fa-'.$grid_data['fa'].'"></i><a href="'.$company_link.'">'.$meta_key_values[$meta_key].'</a></div>';
+				}
 			}			
+			
+			
+			
+					
 		else{
 			if(!empty($meta_key_values[$meta_key])){
 				$html .= '<div title="'.$grid_data['title'].'" class="job-meta '.$grid_data['class'].'"><i class="fa fa-'.$grid_data['fa'].'"></i><a href="#">'.$meta_key_values[$meta_key].'</a></div>';
