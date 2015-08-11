@@ -28,7 +28,7 @@ class class_job_bm_addons_page  {
 										'price'=>'free',
 										'content'=>'Addon for creating company profile.',										
 										'item_link'=>'http://www.pickplugins.com/item/job-board-manager-company-profile/',
-										'thumb'=>'http://localhost/projects/wordpress/pro/wp-content/uploads/2015/08/dropbox.png',
+										'thumb'=>job_bm_plugin_url.'includes/menu/images/company-profile.png',
 										
 										
 										
