@@ -31,6 +31,14 @@ class class_job_bm_addons_page  {
 										'thumb'=>job_bm_plugin_url.'includes/menu/images/company-profile.png',							
 			),
 			
+			'locations'=>array(	'title'=>'Locations',
+										'version'=>'1.0.0',
+										'price'=>'free',
+										'content'=>'Awesome location single page and display job list under any location via single page.',										
+										'item_link'=>'http://www.pickplugins.com/item/job-board-manager-locations/',
+										'thumb'=>job_bm_plugin_url.'includes/menu/images/locations.png',							
+			),			
+			
 
 			'application-manager'=>array(	'title'=>'Application Manager',
 										'version'=>'1.0.0',
