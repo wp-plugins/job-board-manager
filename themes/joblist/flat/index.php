@@ -203,6 +203,42 @@ if ( ! defined('ABSPATH')) exit;  // if direct access
 				}
 			}			
 			
+		elseif($meta_key== 'job_bm_location'){
+			
+			
+			
+			$location_data = get_page_by_title( $meta_key_values[$meta_key], 'OBJECT', 'location' );
+			
+			if(!empty($location_data)){
+				
+				$location_link = get_post_permalink($location_data->ID);
+					if(empty($location_link)){
+					
+						$location_link = '#';
+						
+					}
+				}
+			else{
+				
+					$location_link = '#';
+				}
+			
+			
+			
+			
+			
+			
+			
+			if(!empty($meta_key_values[$meta_key])){
+				$html .= '<div title="'.$grid_data['title'].'" class="job-meta '.$grid_data['class'].'"><i class="fa fa-'.$grid_data['fa'].'"></i><a href="'.$location_link.'">'.$meta_key_values[$meta_key].'</a></div>';
+				}
+			
+			}	
+			
+			
+			
+			
+			
 			
 			
 					
