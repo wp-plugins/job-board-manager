@@ -33,13 +33,62 @@ if ( ! defined('ABSPATH')) exit;  // if direct access
 			$paged = 1;
 		
 		}
-	
-	
+
+	$meta_keys = explode(',',$meta_keys);
+
+	foreach($meta_keys as $key){
+		
+		if($key=='job_bm_location'){
+			$meta_query[] = array(
+			
+								'key' => $key,
+								'value' => $location,
+								'compare' => '=',
+								
+									);
+			}
+		elseif($key=='job_bm_job_status'){
+			$meta_query[] = array(
+			
+								'key' => $key,
+								'value' => $job_status,
+								'compare' => '=',
+								
+									);
+			}
+			
+		elseif($key=='job_bm_job_type'){
+			$meta_query[] = array(
+			
+								'key' => $key,
+								'value' => $job_type,
+								'compare' => '=',
+								
+									);
+			}			
+			
+		elseif($key=='job_bm_company_name'){
+			$meta_query[] = array(
+			
+								'key' => $key,
+								'value' => $company_name,
+								'compare' => '=',
+								
+									);
+			}			
+			
+			
+			
+		
+		}
+
+
 	$wp_query = new WP_Query(
 		array (
 			'post_type' => 'job',
 			'post_status' => 'publish',
 			'orderby' => 'Date',
+			'meta_query' => $meta_query,
 			'order' => 'DESC',
 			'posts_per_page' => $job_bm_list_per_page,
 			'paged' => $paged,
@@ -189,6 +238,10 @@ if ( ! defined('ABSPATH')) exit;  // if direct access
 	
 	
 	wp_reset_query();
+	else:
+	
+	$html .= __('No job found','job_bm');	
+	
 	endif;		
 				
 				

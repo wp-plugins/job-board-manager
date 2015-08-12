@@ -23,11 +23,26 @@ class class_job_bm_shortcodes{
 			$atts = shortcode_atts(
 				array(
 					'themes' => 'flat',
+					'meta_keys' => '',
+										
+					'location' => '',
+					'job_status' => '',
+					'job_type' => '',	
+					'company_name' => '',					
+					
+																			
 					), $atts);
 	
 			$html = '';
 			$job_bm_themes = $atts['themes'];
 			
+			$meta_keys = $atts['meta_keys'];			
+			$location = $atts['location'];			
+			$job_status = $atts['job_status'];			
+			$job_type = $atts['job_type'];	
+			$company_name = $atts['company_name'];			
+			
+						
 			//$job_bm_themes = get_post_meta( $post_id, 'job_bm_themes', true );
 			//$job_bm_license_key = get_option('job_bm_license_key');
 			
