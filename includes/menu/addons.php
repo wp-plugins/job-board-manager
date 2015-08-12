@@ -27,7 +27,7 @@ class class_job_bm_addons_page  {
 										'version'=>'1.0.0',
 										'price'=>'free',
 										'content'=>'Addon for creating company profile.',										
-										'item_link'=>'http://www.pickplugins.com/item/job-board-manager-company-profile/',
+										'item_link'=>'https://wordpress.org/plugins/job-board-manager-company-profile/',
 										'thumb'=>job_bm_plugin_url.'includes/menu/images/company-profile.png',							
 			),
 			
@@ -35,18 +35,10 @@ class class_job_bm_addons_page  {
 										'version'=>'1.0.0',
 										'price'=>'free',
 										'content'=>'Awesome location single page and display job list under any location via single page.',										
-										'item_link'=>'http://www.pickplugins.com/item/job-board-manager-locations/',
+										'item_link'=>'https://wordpress.org/plugins/job-board-manager-locations/',
 										'thumb'=>job_bm_plugin_url.'includes/menu/images/locations.png',							
 			),			
-			
 
-			'application-manager'=>array(	'title'=>'Application Manager',
-										'version'=>'1.0.0',
-										'price'=>'free',
-										'content'=>'Addon for creating application manager.',										
-										'item_link'=>'http://www.pickplugins.com/item/job-board-manager-application-manager/',
-										'thumb'=>job_bm_plugin_url.'includes/menu/images/application-manager.png',							
-			),
 						
 
 			
