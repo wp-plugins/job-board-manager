@@ -40,7 +40,13 @@ class class_job_bm_addons_page  {
 			),			
 
 						
-
+			'saved-jobs'=>array(	'title'=>'Saved Jobs',
+										'version'=>'1.0.0',
+										'price'=>'$19',
+										'content'=>'Allow visitors to save job link as bookmarks to thier account.',										
+										'item_link'=>'http://www.pickplugins.com/item/job-board-manager-saved-jobs/',
+										'thumb'=>job_bm_plugin_url.'includes/menu/images/saved-jobs.png',							
+			),	
 			
 		
 			
