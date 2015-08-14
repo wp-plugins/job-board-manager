@@ -1,7 +1,6 @@
 <?php
 /*
 * @Author 		ParaTheme
-* @Folder	 	job-board-manager/includes
 * Copyright: 	2015 ParaTheme
 */
 

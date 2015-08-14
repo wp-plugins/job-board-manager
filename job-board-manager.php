@@ -3,7 +3,7 @@
 Plugin Name: Job Board Manager
 Plugin URI: http://paratheme.com
 Description: Awesome Job Board Manager.
-Version: 1.0.2
+Version: 1.0.3
 Author: paratheme
 Author URI: http://paratheme.com
 License: GPLv2 or later
@@ -26,7 +26,7 @@ class JobBoardManager{
 	define('job_bm_conatct_url', 'http://paratheme.com/contact/' );
 	define('job_bm_qa_url', 'http://paratheme.com/qa/' );
 	define('job_bm_plugin_name', 'Job Board Manager' );
-	define('job_bm_plugin_version', '1.0.2' );
+	define('job_bm_plugin_version', '1.0.3' );
 	define('job_bm_customer_type', 'free' );	 // pro & free	
 	define('job_bm_share_url', 'https://wordpress.org/plugins/job-board-manager/' );
 	define('job_bm_tutorial_video_url', '//www.youtube.com/embed/YXwUFSU23iU?rel=0' );
