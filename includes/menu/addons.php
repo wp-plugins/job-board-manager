@@ -42,13 +42,19 @@ class class_job_bm_addons_page  {
 						
 			'saved-jobs'=>array(	'title'=>'Saved Jobs',
 										'version'=>'1.0.0',
-										'price'=>'$19',
+										'price'=>'$15',
 										'content'=>'Allow visitors to save job link as bookmarks to thier account.',										
 										'item_link'=>'http://www.pickplugins.com/item/job-board-manager-saved-jobs/',
 										'thumb'=>job_bm_plugin_url.'includes/menu/images/saved-jobs.png',							
 			),	
 			
-		
+			'social-share'=>array(	'title'=>'Social Share',
+										'version'=>'1.0.0',
+										'price'=>'$15',
+										'content'=>'Social Share allow visitors to share job link to thier social network site.',										
+										'item_link'=>'http://www.pickplugins.com/item/job-board-manager-social-share/',
+										'thumb'=>job_bm_plugin_url.'includes/menu/images/social-share.png',							
+			),			
 			
 			
 						
