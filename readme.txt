@@ -22,6 +22,14 @@ Easy to customizable made this plugin supper developer friendly , you can add yo
 ### Job Board Manager by http://pickplugins.com
 * [Live Demo!&raquo;](http://www.pickplugins.com/demo/job-board-manager/)
 
+<strong>Add-on for Job Board Manager</strong>
+
+* [Locations (Free) &raquo;](https://wordpress.org/plugins/job-board-manager-locations/)
+* [Company Profile (Free) &raquo;](https://wordpress.org/plugins/job-board-manager-company-profile/)
+* [Saved Jobs (Paid) &raquo;](http://www.pickplugins.com/item/job-board-manager-saved-jobs/)
+* [Social Share (Paid) &raquo;](http://www.pickplugins.com/item/job-board-manager-social-share/)
+
+
 <strong>Plugin Features</strong>
 
 * Extensible meta fields for job.
